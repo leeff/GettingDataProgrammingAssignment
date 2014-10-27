@@ -28,32 +28,20 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-The set of variables that were estimated from these signals are: 
+Finally, an average of the estimated mean and standard deviation was taken for each set of subject and activity.
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+The complete list of columns are here
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+1. "subject" : Subject label
+2. "activity_label": 
+	WALKING
+	WALKING_UPSTAIRS
+	WALKING_DOWNSTAIRS
+	SITTING
+	STANDING
+	LAYING
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+The rest of the other 66 columns are the average of the mean and standard deviation of the above 17 signals:
 
-The complete list of variables of each feature vector is available in 'features.txt'
+"avg_tBodyAcc_mean_X" "avg_tBodyAcc_mean_Y" "avg_tBodyAcc_mean_Z" "avg_tBodyAcc_stdDev_X" "avg_tBodyAcc_stdDev_Y" "avg_tBodyAcc_stdDev_Z" "avg_tGravityAcc_mean_X" "avg_tGravityAcc_mean_Y" "avg_tGravityAcc_mean_Z" "avg_tGravityAcc_stdDev_X" "avg_tGravityAcc_stdDev_Y" "avg_tGravityAcc_stdDev_Z" "avg_tBodyAccJerk_mean_X" "avg_tBodyAccJerk_mean_Y" "avg_tBodyAccJerk_mean_Z" "avg_tBodyAccJerk_stdDev_X" "avg_tBodyAccJerk_stdDev_Y" "avg_tBodyAccJerk_stdDev_Z" "avg_tBodyGyro_mean_X" "avg_tBodyGyro_mean_Y" "avg_tBodyGyro_mean_Z" "avg_tBodyGyro_stdDev_X" "avg_tBodyGyro_stdDev_Y" "avg_tBodyGyro_stdDev_Z" "avg_tBodyGyroJerk_mean_X" "avg_tBodyGyroJerk_mean_Y" "avg_tBodyGyroJerk_mean_Z" "avg_tBodyGyroJerk_stdDev_X" "avg_tBodyGyroJerk_stdDev_Y" "avg_tBodyGyroJerk_stdDev_Z" "avg_tBodyAccMag_mean" "avg_tBodyAccMag_stdDev" "avg_tGravityAccMag_mean" "avg_tGravityAccMag_stdDev" "avg_tBodyAccJerkMag_mean" "avg_tBodyAccJerkMag_stdDev" "avg_tBodyGyroMag_mean" "avg_tBodyGyroMag_stdDev" "avg_tBodyGyroJerkMag_mean" "avg_tBodyGyroJerkMag_stdDev" "avg_fBodyAcc_mean_X" "avg_fBodyAcc_mean_Y" "avg_fBodyAcc_mean_Z" "avg_fBodyAcc_stdDev_X" "avg_fBodyAcc_stdDev_Y" "avg_fBodyAcc_stdDev_Z" "avg_fBodyAccJerk_mean_X" "avg_fBodyAccJerk_mean_Y" "avg_fBodyAccJerk_mean_Z" "avg_fBodyAccJerk_stdDev_X" "avg_fBodyAccJerk_stdDev_Y" "avg_fBodyAccJerk_stdDev_Z" "avg_fBodyGyro_mean_X" "avg_fBodyGyro_mean_Y" "avg_fBodyGyro_mean_Z" "avg_fBodyGyro_stdDev_X" "avg_fBodyGyro_stdDev_Y" "avg_fBodyGyro_stdDev_Z" "avg_fBodyAccMag_mean" "avg_fBodyAccMag_stdDev" "avg_fBodyBodyAccJerkMag_mean" "avg_fBodyBodyAccJerkMag_stdDev" "avg_fBodyBodyGyroMag_mean" "avg_fBodyBodyGyroMag_stdDev" "avg_fBodyBodyGyroJerkMag_mean" "avg_fBodyBodyGyroJerkMag_stdDev"
+
