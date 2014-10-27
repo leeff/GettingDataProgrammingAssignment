@@ -89,4 +89,4 @@ for (i in 1:length(variableNames))
 
 # Writes the data out
 # Note: to read the data back, use read.table("data_tidy.txt", header = TRUE)
-write.table(data_tidy,file="data_tidy.txt",row.name=FALSE)
+write.table(data_tidy,file="data_tidy.txt",row.names=FALSE)
