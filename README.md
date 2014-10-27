@@ -1,8 +1,26 @@
-# How to run "run_analysis.R""
-Simply type 
-*source('./run_analysis.R', echo=TRUE)*
+# Introduction
+The R script, run_analysis.R, runs a series of analysis on the UCI Human Activity Recognition Using Smartphones Data Set described in below link
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-# How the program works
+Here are the data for the project:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+## Synopsis of the analysis:
+* Step 1: Merges the training and the test sets to create one data set.
+* Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
+* Step 3: Uses descriptive activity names to name the activities in the data set
+* Step 4: Appropriately labels the data set with descriptive variable names. 
+* Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+## Setup
+* Unzip the above dataset in the working directory using the zip file name (this directory is created in working directory: "getdata_projectfiles_UCI HAR Dataset"
+* Place run_analysis.R in the working directory.
+* Type R command *source('./run_analysis.R', echo=TRUE)*
+
+## Output: "data_tidy.txt" in the working directory
+
+
+# Details of Script
 
 ## Step 1: Merges the training and the test sets to create one data set.
 Imports the feature labels to be used as column names for the data
